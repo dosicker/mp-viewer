@@ -1,0 +1,7 @@
+<!--components/imageViewer/imageViewer.wxml-->
+<view class="viewer" wx:if="{{onShow}}">
+	<view class="maskbg {{onClass ? 'show' : 'hide'}}" bindtap="hideViewer"></view>
+	<view class="viewimage">
+		<image class="{{onClass ? 'show' : 'hide'}}" src="{{imgUrl}}" mode="aspectFill"></image>
+	</view>
+</view>

@@ -1,0 +1,49 @@
+/* components/imageViewer/imageViewer.wxss */
+.viewer {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.viewer .maskbg {
+  opacity: 0.2;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  transition: all 350ms;
+}
+
+.viewer .maskbg.hide {
+  width: 0;
+  height: 0;
+}
+
+.viewer .viewimage {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewer .viewimage image {
+
+  transition: all 350ms;
+}
+
+.viewer .viewimage image.show {
+  width: 600rpx;
+  height: 600rpx;
+  z-index: 9;
+}
+
+.viewer .viewimage image.hide {
+  width: 0;
+  height: 0;
+}
