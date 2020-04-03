@@ -23,4 +23,4 @@ imgUrl 预览图链接
 
 
 ## 废话少说，看图
-![Alt](assents/demo.gif)
+![Alt](./assents/demo.gif)
